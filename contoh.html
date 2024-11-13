@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Sama dengan halaman produk -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Detail Produk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Sama dengan halaman utama -->
+      <h1>SERA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="products.html">Produk</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="product-detail">
+      <img src="lumix.jpg" alt="Kamera 1" class="gambar" />
+      <h4>Camera Panasonic Lumix S1H Mirrorless</h4>
+      <p>Harga: Rp 750.000/hari</p>
+      <p>
+        Deskripsi:
+        <i
+          >Panasonic Lumix S1H adalah kamera mirrorless yang dirancang khusus
+          untuk pengambilan gambar dan video profesional. Ditenagai oleh sensor
+          gambar full-frame 24.2MP, kamera ini menawarkan kemampuan merekam
+          video dalam resolusi 6K dan 4K dengan kualitas yang luar biasa.
+          Dilengkapi dengan V-Log dan V-Gamut, kontrol manual penuh, sistem
+          stabilisasi gambar in-body, dan fitur video profesional, Lumix S1H
+          merupakan pilihan ideal bagi sinematografer yang membutuhkan kinerja
+          tinggi dan fleksibilitas dalam produksi video. Dibangun dengan badan
+          magnesium alloy yang tahan cuaca dan tahan debu, kamera ini juga cocok
+          untuk penggunaan di luar ruangan.</i
+        >
+      </p>
+      <button onclick="showSummary('Panasonic Lumix S1H Mirrorless', 750000)">
+        Booking Now
+      </button>
+    </section>
+
+    <!-- Konten lainnya -->
+
+    <script>
+      // Fungsi untuk menampilkan struk pesanan
+      function showSummary(itemName, price) {
+        // Tampilkan dialog atau modal dengan informasi pesanan
+        var summary =
+          "Terima kasih atas pesanan Anda!\n\n" +
+          "Produk: " +
+          itemName +
+          "\n" +
+          "Harga: Rp " +
+          price.toLocaleString("id-ID") +
+          "/hari\n\n" +
+          "Total: Rp " +
+          price.toLocaleString("id-ID");
+        alert(summary);
+      }
+    </script>
+  </body>
+</html>
